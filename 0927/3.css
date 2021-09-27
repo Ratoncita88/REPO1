@@ -1,0 +1,133 @@
+﻿@font-face {
+	font-family: 'Mulish';
+	src: url('Mulish-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+body {
+	font: normal 16px/24px 'Mulish';
+	margin: 0;
+}
+.container {
+	margin: 50px auto;
+	background: pink;
+	position: relative;
+	padding: 10px;
+}
+p, h1, h4 {
+	background: white;
+	border-radius: 10px;
+	width: 280px;
+	padding: 10px;
+}
+@media screen and (min-width: 720px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 800px;
+		padding: 0;
+	}
+	p {
+		position: absolute;
+		margin: 0;
+	}
+	.first {
+		top: 50px;
+		left: 50px;
+	}
+	.second {
+		top: 50px;
+		right: 50px;
+	}
+	.third {
+		bottom: 50px;
+		left: calc(50% - 150px);
+	}
+}
+@media screen and (min-width: 1200px) {
+	
+
+
+		@keyframes hod1 {
+
+			25% {
+			transform: translate(1100px);
+			}
+			50% {
+			transform: translate(1100px,580px);
+			}
+			75% {
+			transform: translate(0px,580px);
+			}
+		}
+
+			.first {
+				animation: hod1 10s linear ;
+				}
+		@keyframes hod2 {
+
+			
+			25% {
+			transform: translate(0,580px);
+			}
+			50% {
+			transform: translate(-1100px,580px);
+			}
+			75% {
+			transform: translate(-1100px,0px);
+			}
+		}
+
+			.second {
+				animation: hod2 10s linear ;
+				}
+				
+
+
+			@keyframes hod3 {
+
+			
+			25% {
+			transform: translate(-580px,0);
+			}
+			50% {
+			transform: translate(-580px,-580px);
+			}
+			75% {
+			transform: translate(580px,-580px);
+			}
+			90% {
+			transform: translate(580px,0px);
+			}
+		}
+
+			.third {
+				animation: hod3 10s linear ;
+				}
+
+	
+			.h1{
+  
+			  transition-property: background;
+			  transition-duration: 1s;
+			  transition-timing-function: linear;
+				}
+			
+			.h4{
+  
+			
+			  transition-property: background, border-radius;
+			  transition-duration: 1s;
+			  transition-timing-function: linear;
+			}
+			.h1:hover {
+				 background: linear-gradient(to bottom, #feccb1 0%,#f17432 50%,#ea5507 51%,#fb955e 100%);
+				}
+				
+			.h4:hover {
+				 background: linear-gradient(to bottom, #f3c5bd 0%,#e86c57 50%,#ea2803 51%,#ff6600 75%,#c72200 100%);;
+				 border-radius: 50%;
+				}
+}
