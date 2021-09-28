@@ -4,6 +4,48 @@
 	font-weight: normal;
 	font-style: normal;
 }
+		@keyframes hod1 {
+
+			25% {
+			transform: translate(1100px);
+			}
+			50% {
+			transform: translate(1100px,580px);
+			}
+			75% {
+			transform: translate(0px,580px);
+			}
+		}
+		
+		@keyframes hod2 {
+
+			
+			25% {
+			transform: translate(0,580px);
+			}
+			50% {
+			transform: translate(-1100px,580px);
+			}
+			75% {
+			transform: translate(-1100px,0px);
+			}
+		}
+		@keyframes hod3 {
+
+			
+			25% {
+			transform: translate(-580px,0);
+			}
+			50% {
+			transform: translate(-580px,-580px);
+			}
+			75% {
+			transform: translate(580px,-580px);
+			}
+			90% {
+			transform: translate(580px,0px);
+			}
+		}
 body {
 	font: normal 16px/24px 'Mulish';
 	margin: 0;
@@ -48,63 +90,23 @@ p, h1, h4 {
 }
 @media screen and (min-width: 1200px) {
 	
-
-
-		@keyframes hod1 {
-
-			25% {
-			transform: translate(1100px);
-			}
-			50% {
-			transform: translate(1100px,580px);
-			}
-			75% {
-			transform: translate(0px,580px);
-			}
-		}
-
-			.first {
-				animation: hod1 10s linear ;
+				.container {
+					
+					width: 1450px;
+					
 				}
-		@keyframes hod2 {
-
-			
-			25% {
-			transform: translate(0,580px);
-			}
-			50% {
-			transform: translate(-1100px,580px);
-			}
-			75% {
-			transform: translate(-1100px,0px);
-			}
-		}
+	
+			.first {
+				animation: hod1 10s linear infinite;
+				}
+		
 
 			.second {
-				animation: hod2 10s linear ;
+				animation: hod2 10s linear infinite;
 				}
-				
-
-
-			@keyframes hod3 {
-
 			
-			25% {
-			transform: translate(-580px,0);
-			}
-			50% {
-			transform: translate(-580px,-580px);
-			}
-			75% {
-			transform: translate(580px,-580px);
-			}
-			90% {
-			transform: translate(580px,0px);
-			}
-		}
-
 			.third {
-				animation: hod3 10s linear ;
+				animation: hod3 10s linear infinite ;
 				}
 
 	
