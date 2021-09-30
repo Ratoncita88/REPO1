@@ -89,15 +89,14 @@ h1 {
 }
 .container1 {
 	display: flex;
-	flex-direction: row;
+	position: absolute;
+	/*flex-direction: row;*/
 	width: 1110px;
 	height: 300px;
-	position: absolute;
-	left: 405px;
-	/*left: 594px;*/
+	left: calc(50% - 555px);
+	align-items: center;
 	top: 590px;
 	background: #F7F7F7;
-	align-items: center;
 	gap: 30px;
 	justify-content: center;
 	
@@ -110,7 +109,7 @@ h1 {
 	/*left: 535px;
 	top: 647px;*/
 	position: relative;
-	/*border: 2px solid black; 	*/
+	border: 2px solid black; 	
 	font: 500 normal 72px 'Oswald';
 	color: #f7654a;
 	text-align: center;

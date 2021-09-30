@@ -105,13 +105,14 @@ footer li {
   }
   footer p {
 	width: 338px;
-	margin-bottom: 64px;
+	
 	margin-left: 124px;
 	margin-right: 308px;
+	margin-top: 26px;
 }
  footer .copy {
 	margin-left: 125px; 
-	margin-bottom: 85px;
+	
  }
  footer button {
 	width: 133px;
@@ -121,4 +122,62 @@ footer li {
  footer li{
 	 margin-top: 25px;
  }
+ footer {
+	height: auto;
+	
+}
+}
+
+@media screen and (max-width: 500px) {
+	.container {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+
+	width: 375px;
+	padding:0;
+	
+}
+footer .heading {
+	font: 400 normal 24px/28px 'Roboto';
+	opacity: 1;
+	margin-top: 18px;
+	margin-bottom: 65px;
+	width: 343px;
+	text-align: center;
+	
+}
+footer p {
+	width: 343px;
+	top: 3100px;
+	margin-left: 16px;
+	margin-right: 16px;
+	
+	font: 400 normal 16px/26px 'Roboto';
+	text-align: center;
+}
+footer button {
+	width: 108px;
+	height: 31px;
+	order:3;
+	margin-left: 132px;
+	margin-right: 132px;
+	margin-bottom: 40px;
+}
+footer ol {
+	  display: block;
+	  margin-left: 16px;
+	  font: 400 normal 16px/18.75px 'Roboto';
+	  margin-top: 32px;
+  }	
+  footer li{
+	 margin-top: 17px;
+ }
+ footer .copy {
+	margin-left: 16px; 
+	margin-bottom: 32px;
+	width: 343px;
+	height: 26px;
+ }
+ 
 }
