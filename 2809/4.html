@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Selectors</title>
+
+        <style>
+            .container {
+                display: grid;
+                width: 800px;
+                height: 800px;
+                margin: 50px auto;
+                background: #eee;
+                grid-template: repeat(8, 1fr) / repeat(8, 1fr);
+            }
+            .container > div {
+                width: 100px;
+                height: 100px;
+            }
+            .first {
+                background: black;
+            }
+            .first + div + div {
+                background: blue;
+            }
+            div:nth-child(8n+3) {
+                background: green;
+            }
+            .first ~ :nth-child(8n+2) {
+                background: red;
+            }
+            /*
+            .second {
+                background: white;
+            }
+            .first ~ .second {
+                background: yellow;
+            }
+            */
+            div.second {
+                background: yellow;
+            }
+            div.second:nth-child(10) {
+                background: white;
+            }
+			 .second + div + div {
+				background:pink;
+			}
+			div:last-of-type {
+                background: purple; /*покрасились все кроме покрашенных ранее*/
+            }
+			div:only-of-type { background: brown; }
+			.third:nth-of-type(odd) { background: grey; }
+			.third ~ :nth-child(8n+5) { /*покрасили из third вниз от пятого*/
+                background: violet;
+            }
+			.forth {
+                background: #2c539e;
+            }
+			.forth + div + div + div{ 
+                background: #2c539e;
+            }
+			
+			.container :first-child { background: #f6e6b4; }
+			.container :last-child { background: #f6e6b4; }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="third"></div>
+             <div class="third"></div>
+             <div class="third"></div>
+          <div class="third"></div>
+          <div class="third"></div>
+       <div class="third"></div>
+              <div class="third"></div>
+              <div class="third"></div>
+            <div></div>
+            <div class="second"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="forth"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="first"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="second"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </body>
+</html> 
